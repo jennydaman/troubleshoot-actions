@@ -26,7 +26,7 @@ jobs:
       run: |
         cd /tmp
         wget https://github.com/ducaale/xh/releases/download/v0.24.1/xh_0.24.1_amd64.deb
-        apt install -y ./xh_0.24.1_amd64.deb
+        sudo apt install -y ./xh_0.24.1_amd64.deb
     - name: Try downloading DICOM file
       id: download
       run: xh -do image.dcm https://storage.googleapis.com/idc-open-data/d478b0bd-1f80-4734-8d81-47f20c36d0ab/1753337a-c390-4698-9d9b-f2a5b5a702a6.dcm
